@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_35r",
+				"name": "Copy_az-demo",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
