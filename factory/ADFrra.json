@@ -1,0 +1,9 @@
+{
+	"name": "ADFrra",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f8fb3753-bf37-4eb7-bf01-65a6870c06c2",
+		"tenantId": "873af1ea-08d4-47e2-a7fe-f1d2463f894d"
+	}
+}
