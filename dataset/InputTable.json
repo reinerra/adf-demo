@@ -5,12 +5,6 @@
 			"referenceName": "AzureTableStorageIN",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"tableName": {
-				"type": "string",
-				"defaultValue": "NOSE"
-			}
-		},
 		"annotations": [],
 		"type": "AzureTable",
 		"schema": []
