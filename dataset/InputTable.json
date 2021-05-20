@@ -7,9 +7,6 @@
 		},
 		"annotations": [],
 		"type": "AzureTable",
-		"schema": [],
-		"typeProperties": {
-			"tableName": "CommHistoryXX5"
-		}
+		"schema": []
 	}
 }
