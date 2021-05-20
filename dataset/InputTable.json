@@ -1,0 +1,15 @@
+{
+	"name": "InputTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureTableStorageIN",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "CommHistoryXX5"
+		}
+	}
+}
