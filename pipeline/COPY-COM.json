@@ -1,0 +1,135 @@
+{
+	"name": "COPY-COM",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_494",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "CommHistoryXX5"
+					},
+					{
+						"name": "Destination",
+						"value": "ComNew"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "AzureTableSource",
+						"azureTableSourceIgnoreTableNotFound": false
+					},
+					"sink": {
+						"type": "AzureTableSink",
+						"azureTableInsertType": "merge",
+						"writeBatchSize": 10000
+					},
+					"enableStaging": false,
+					"validateDataConsistency": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "System",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PartitionKey",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "RowKey",
+									"type": "String"
+								},
+								"sink": {
+									"name": "RowKey",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Timestamp",
+									"type": "DateTimeOffset"
+								},
+								"sink": {
+									"name": "Timestamp",
+									"type": "DateTimeOffset"
+								}
+							},
+							{
+								"source": {
+									"name": "Contact",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Contact",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Lessee",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Lessee",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PartitionKey",
+									"type": "String"
+								},
+								"sink": {
+									"name": "System",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "UnsubscribeDate",
+									"type": "DateTimeOffset"
+								},
+								"sink": {
+									"name": "UnsubscribeDate",
+									"type": "DateTimeOffset"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_494",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_494",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
