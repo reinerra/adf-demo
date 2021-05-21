@@ -1,0 +1,9 @@
+{
+	"name": "pipelineTest",
+	"properties": {
+		"folder": {
+			"name": "Nacha1"
+		},
+		"annotations": []
+	}
+}
