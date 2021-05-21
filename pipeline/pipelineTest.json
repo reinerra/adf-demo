@@ -1,6 +1,18 @@
 {
 	"name": "pipelineTest",
 	"properties": {
+		"activities": [
+			{
+				"name": "Set variable i",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "i",
+					"value": "Hello"
+				}
+			}
+		],
 		"variables": {
 			"i": {
 				"type": "String",
