@@ -1,6 +1,12 @@
 {
 	"name": "pipelineTest",
 	"properties": {
+		"variables": {
+			"i": {
+				"type": "String",
+				"defaultValue": "1"
+			}
+		},
 		"folder": {
 			"name": "Nacha1"
 		},
