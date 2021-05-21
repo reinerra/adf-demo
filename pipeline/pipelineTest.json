@@ -28,6 +28,33 @@
 					"variableName": "i",
 					"value": "hello2"
 				}
+			},
+			{
+				"name": "If Conditioni is Hello",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "Set variable i",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(variables('i'),'Hello')",
+						"type": "Expression"
+					},
+					"ifTrueActivities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
+				}
 			}
 		],
 		"variables": {
