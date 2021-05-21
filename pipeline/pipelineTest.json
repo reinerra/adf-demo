@@ -61,6 +61,10 @@
 			"i": {
 				"type": "String",
 				"defaultValue": "1"
+			},
+			"s": {
+				"type": "String",
+				"defaultValue": "NADA"
 			}
 		},
 		"folder": {
