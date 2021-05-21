@@ -48,10 +48,14 @@
 					},
 					"ifTrueActivities": [
 						{
-							"name": "Set variable1",
+							"name": "Set variable Nada",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "s",
+								"value": "Perfect"
+							}
 						}
 					]
 				}
